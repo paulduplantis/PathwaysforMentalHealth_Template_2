@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Record Test</title>
-    
+
     <!-- Link to Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-    
+
     <!-- Link to Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <!-- Custom CSS Styles (you can move this to a separate .css file) -->
+
+    <!-- Custom CSS Styles -->
     <style>
         body {
             font-family: 'Quicksand', sans-serif;
@@ -22,7 +22,7 @@
             background-color: #f0f0f0;
             margin: 0;
         }
-        
+
         .profile-card {
             border: 2px solid #ADD8E6;
             border-radius: 12px;
@@ -44,22 +44,21 @@
             margin: 10px 0;
         }
 
-        .profile-card::before {
-            content: 'Profile';
-            position: absolute;
-            top: 10px;
-            right: 0px;
+        .profile-tag {
             background-color: #1E90FF;
             color: white;
             font-weight: bold;
             padding: 2px 10px;
-           
+            border-radius: 5px;
+            display: inline-block;
+            margin-right: 5px;
         }
     </style>
 </head>
 <body>
 
     <div class="profile-card">
+        <span class="profile-tag">Profile</span>
         <i class="fas fa-user-circle"></i>
         <div class="profile-title">John Doe II</div>
         <p>Curator of content and community contributor.</p>
