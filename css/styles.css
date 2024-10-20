@@ -39,6 +39,16 @@ body {
     margin-left: 150px;
 }
 
+.ask-chatgpt-button {
+    background-color: white;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
 .feed-container {
     display: flex;
     justify-content: space-between;
@@ -220,8 +230,10 @@ p {
         margin-bottom: 10px;
     }
 
-    .header-button {
+    .header-button, .ask-chatgpt-button {
         margin-top: 15px;
         order: 2;
+        margin-left: 0;
+        align-self: center;
     }
 }
