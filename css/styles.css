@@ -14,36 +14,31 @@ body {
     background-color: #4a3b8b;
     padding: 10px 0;
     width: 100%;
-    position: relative;
     text-align: center;
 }
 
 .header-content {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 60px; /* Define a height for proper positioning */
-}
-
-.header-title-container {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
 }
 
 .header-title {
     color: white;
     font-weight: 600;
     font-size: 1.5em;
-    margin: 0;
+    margin: 0 auto; /* This keeps the title centered */
+    text-align: center;
+    flex-grow: 1; /* Take up available space to help keep centered */
 }
 
 .header-icons {
-    position: absolute;
-    right: 150px; /* Place icons 150px from the right edge */
-    top: 50%;
-    transform: translateY(-50%); /* Center vertically */
     display: flex;
     gap: 20px; /* Space between icons */
+    margin-left: auto; /* Push icons to the right */
+    padding-right: 150px; /* Ensure icons are 150px from the right edge */
 }
 
 .header-icons i {
@@ -55,20 +50,18 @@ body {
 /* Responsive Mobile Styling */
 @media (max-width: 767px) {
     .header-content {
-        height: auto; /* Allow dynamic height for mobile */
+        flex-direction: column;
+        padding: 10px;
     }
 
-    .header-title-container {
-        position: static; /* Normal flow for mobile */
-        transform: none;
-        text-align: center;
+    .header-title {
+        margin-bottom: 10px;
     }
 
     .header-icons {
-        position: static; /* Normal flow for mobile */
         justify-content: center;
-        margin-top: 10px;
-        transform: none;
+        padding-right: 0; /* Remove right padding for mobile */
+        margin-left: 0; /* No margin-left for mobile */
     }
 
     .header-icons i {
@@ -149,14 +142,15 @@ body {
         align-items: center;
     }
 
-    .header-title-container {
-        position: static;
-        transform: none;
+    .header-title {
+        text-align: center;
+        margin: 0;
     }
 
     .header-icons {
         justify-content: center;
-        margin-top: 10px;
+        margin: 10px 0;
+        padding-right: 0;
     }
 
     .header-icons i {
