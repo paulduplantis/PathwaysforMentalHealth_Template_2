@@ -20,7 +20,7 @@ body {
 .header-content {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* Align title and icons vertically in the center */
     width: 100%;
     position: relative;
 }
@@ -29,9 +29,9 @@ body {
     color: white;
     font-weight: 600;
     font-size: 1.5em;
-    margin: 0 auto; /* This keeps the title centered */
+    margin: 0;
     text-align: center;
-    flex-grow: 1; /* Take up available space to help keep centered */
+    flex-grow: 1; /* Ensure the title takes up available space */
 }
 
 .header-icons {
@@ -47,19 +47,22 @@ body {
     cursor: pointer;
 }
 
-/* Responsive Mobile Styling */
+/* Mobile Styling */
 @media (max-width: 767px) {
     .header-content {
         flex-direction: column;
-        padding: 10px;
+        align-items: center;
+        justify-content: center;
     }
 
     .header-title {
-        margin-bottom: 10px;
+        text-align: center;
+        margin: 0;
     }
 
     .header-icons {
         justify-content: center;
+        margin-top: 10px;
         padding-right: 0; /* Remove right padding for mobile */
         margin-left: 0; /* No margin-left for mobile */
     }
@@ -133,40 +136,6 @@ body {
 
 .header-button:hover, .ask-chatgpt-button:hover {
     background-color: #DDDDDD;
-}
-
-/* Mobile Styling */
-@media (max-width: 767px) {
-    .header-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header-title {
-        text-align: center;
-        margin: 0;
-    }
-
-    .header-icons {
-        justify-content: center;
-        margin: 10px 0;
-        padding-right: 0;
-    }
-
-    .header-icons i {
-        font-size: 28px;
-    }
-
-    .feed-container {
-        flex-direction: column;
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .profile-card, .provider-card, .product-card, .insight-card {
-        width: 100%;
-        margin-bottom: 20px;
-    }
 }
 
 /* Tablet and Desktop Styling */
