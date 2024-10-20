@@ -36,13 +36,13 @@ body {
 .header-icons {
     display: flex;
     gap: 20px; /* Space between icons */
-    margin-left: auto; /* Push icons to the right on desktop */
-    margin-right: 150px; /* Add margin-right for desktop */
+    margin-left: auto; /* Push icons to the right */
+    margin-right: 150px; /* 150px from the right edge for desktop */
 }
 
 .header-icons i {
-    color: white; /* Make icons white */
-    font-size: 24px; /* Icon size */
+    color: white; /* Ensure icons are white */
+    font-size: 30px; /* Larger icons for desktop */
     cursor: pointer;
 }
 
@@ -54,58 +54,21 @@ body {
 
     .header-icons {
         justify-content: center; /* Center icons on mobile */
-        margin: 10px 0 0 0; /* Margin for mobile */
+        margin: 10px 0 0 0; /* Remove margin-right for mobile */
     }
 
     .header-icons i {
         font-size: 28px; /* Slightly larger icons for mobile */
     }
-
-    .header-buttons {
-        margin: 10px 0;
-        justify-content: center;
-    }
-
-    .header-buttons-wrapper {
-        justify-content: center;
-        width: 100%;
-    }
-
-    /* Cards for Mobile */
-    .feed-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Center align the cards */
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .profile-card, .provider-card, .product-card, .insight-card {
-        width: 100%; /* Full width for each card on mobile */
-        margin-bottom: 20px;
-    }
 }
 
-/* Tablet and Desktop Styling */
-@media (min-width: 768px) {
-    .feed-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 90%;
-        margin-top: 30px;
-    }
-
-    .profile-card, .provider-card, .product-card, .insight-card {
-        width: 45%; /* Two columns for tablets */
-        margin-bottom: 20px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .profile-card, .provider-card, .product-card, .insight-card {
-        width: 22%; /* Three to four columns for desktops */
-    }
+/* Feed Container Styling */
+.feed-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 30px;
 }
 
 /* Card Styling */
@@ -114,6 +77,7 @@ body {
     border-radius: 12px;
     background: linear-gradient(to bottom, #E0F7FA, #FFFFFF);
     padding: 20px;
+    width: 22%;
     box-sizing: border-box;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -162,4 +126,63 @@ body {
 
 .header-button:hover, .ask-chatgpt-button:hover {
     background-color: #DDDDDD;
+}
+
+/* Mobile Styling */
+@media (max-width: 767px) {
+    .header {
+        padding: 10px 10px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-title {
+        text-align: center;
+        margin: 0;
+    }
+
+    .header-icons {
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .header-icons i {
+        font-size: 28px;
+    }
+
+    .feed-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .profile-card, .provider-card, .product-card, .insight-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Tablet and Desktop Styling */
+@media (min-width: 768px) {
+    .feed-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .profile-card, .provider-card, .product-card, .insight-card {
+        width: 45%; /* Two columns for tablets */
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .profile-card, .provider-card, .product-card, .insight-card {
+        width: 22%; /* Three to four columns for desktops */
+    }
 }
