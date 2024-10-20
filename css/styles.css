@@ -23,34 +23,42 @@ body {
     justify-content: center; /* Center content horizontally */
     align-items: center;
     width: 100%;
+    position: relative;
 }
 
 .header-title {
     color: white;
     font-weight: 600;
     font-size: 1.5em;
-    margin: 0; /* Remove any default margins */
+    margin: 0;
 }
 
-/* Remove margin-left to ensure centering on desktop */
-.header-title {
-    margin-left: 0; /* Override any left margin */
+.header-icons {
+    display: flex;
+    gap: 20px; /* Space between icons */
+    margin-left: auto; /* Push icons to the right on desktop */
+    margin-right: 150px; /* Add margin-right for desktop */
+}
+
+.header-icons i {
+    color: white; /* Make icons white */
+    font-size: 24px; /* Icon size */
+    cursor: pointer;
 }
 
 /* Responsive Mobile Styling */
 @media (max-width: 767px) {
-    .header {
-        padding: 10px 10px;
-    }
-
     .header-content {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack title and icons */
     }
 
-    .header-title {
-        text-align: center; /* Ensure title remains centered on mobile */
-        margin: 0;
+    .header-icons {
+        justify-content: center; /* Center icons on mobile */
+        margin: 10px 0 0 0; /* Margin for mobile */
+    }
+
+    .header-icons i {
+        font-size: 28px; /* Slightly larger icons for mobile */
     }
 
     .header-buttons {
