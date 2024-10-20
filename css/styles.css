@@ -15,11 +15,12 @@ body {
     padding: 10px 0;
     width: 100%;
     position: relative;
+    text-align: center; /* Center the title by default */
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center content horizontally */
     align-items: center;
     width: 100%;
 }
@@ -27,20 +28,18 @@ body {
 .header-title {
     color: white;
     font-weight: 600;
-    margin-left: 150px;
     font-size: 1.5em;
+    margin: 0; /* Remove any default margins */
 }
 
 .header-buttons {
     display: flex;
     gap: 15px;
-    margin-right: 150px;
 }
 
 .header-buttons-container {
     display: flex;
     gap: 10px;
-    margin-left: 20px;
 }
 
 .header-buttons-wrapper {
@@ -62,7 +61,7 @@ body {
     }
 
     .header-title {
-        text-align: center;
+        text-align: center; /* Ensure title remains centered on mobile */
         margin: 0;
     }
 
