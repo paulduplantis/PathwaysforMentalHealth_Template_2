@@ -19,25 +19,26 @@ body {
 
 .header-content {
     display: flex;
-    justify-content: space-between; /* Space between title and icons */
+    justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0 20px; /* Remove large padding and add small default padding */
+    position: relative;
 }
 
 .header-title {
     color: white;
     font-weight: 600;
     font-size: 1.5em;
-    margin: 0 auto; /* Center the title */
-    flex-grow: 1; /* Ensure it takes up the available space */
+    margin: 0;
+    flex-grow: 1; /* Take up available space to keep centered */
     text-align: center;
 }
 
 .header-icons {
     display: flex;
     gap: 20px; /* Space between icons */
-    margin-right: 20px; /* Slight margin to avoid being too close to the edge */
+    margin-left: auto; /* Push icons to the right */
+    padding-right: 150px; /* Ensure icons are 150px from the right */
 }
 
 .header-icons i {
@@ -60,6 +61,7 @@ body {
     .header-icons {
         justify-content: center;
         margin: 10px 0 0 0;
+        padding-right: 0; /* Remove right padding for mobile */
     }
 
     .header-icons i {
@@ -148,6 +150,7 @@ body {
     .header-icons {
         justify-content: center;
         margin: 10px 0;
+        padding-right: 0;
     }
 
     .header-icons i {
