@@ -1,68 +1,156 @@
+/* styles.css */
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
 /* General Header Styling */
 .header {
     background-color: #4a3b8b;
-    padding: 20px 0;
+    padding: 10px 0;
     width: 100%;
+    position: relative;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 100%;
 }
 
 .header-title {
     color: white;
     font-weight: 600;
+    margin-left: 150px;
     font-size: 1.5em;
-    text-align: center;
-    flex: 1;
 }
 
 .header-buttons {
     display: flex;
     gap: 15px;
+    margin-right: 150px;
 }
 
 .header-buttons-container {
     display: flex;
     gap: 10px;
+    margin-left: 20px;
 }
 
-/* Adjust the layout for desktop */
-@media (min-width: 768px) {
-    .header-content {
-        flex-wrap: nowrap;
-    }
-
-    .header-buttons-container {
-        order: -1;
-        margin-right: auto;
-        padding-left: 130px; /* 150px - 20px padding */
-    }
-
-    .header-buttons {
-        padding-right: 130px; /* 150px - 20px padding */
-    }
+.header-buttons-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 10px;
 }
 
 /* Mobile Viewport */
 @media (max-width: 767px) {
+    .header {
+        padding: 10px 10px;
+    }
+
     .header-content {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
     }
 
-    .header-buttons-container {
-        order: 2;
+    .header-title {
+        text-align: center;
+        margin: 0;
+    }
+
+    .header-buttons {
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    .header-buttons-wrapper {
+        justify-content: center;
+        width: 100%;
     }
 }
 
-/* Button Styling */
+.feed-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 30px;
+}
+
+.profile-card, .provider-card, .product-card, .insight-card {
+    border: 2px solid #ADD8E6;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #E0F7FA, #FFFFFF);
+    padding: 20px;
+    width: 22%;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-right: 3px;
+}
+
+.profile-card .profile-tag {
+    background-color: #1E90FF;
+    color: white;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.provider-card .provider-tag {
+    background-color: #FFA500;
+    color: white;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product-card .product-tag {
+    background-color: #32CD32;
+    color: white;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.insight-card .insight-tag {
+    background-color: #FFD700;
+    color: white;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.profile-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.profile-card i, .provider-card i, .product-card i, .insight-card i {
+    font-size: 50px;
+    color: #87CEFA;
+    margin-bottom: 10px;
+}
+
+/* Ensures Buttons are Properly Styled */
 .header-button, .ask-chatgpt-button {
     padding: 10px 20px;
     font-weight: bold;
@@ -70,15 +158,16 @@
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+}
+
+.header-button {
+    background-color: #FFFFFF;
+}
+
+.ask-chatgpt-button {
     background-color: #FFFFFF;
 }
 
 .header-button:hover, .ask-chatgpt-button:hover {
     background-color: #DDDDDD;
-}
-
-/* Icon Styling */
-.header-buttons i {
-    color: white;
-    font-size: 1.2em;
 }
