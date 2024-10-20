@@ -32,21 +32,9 @@ body {
     margin: 0; /* Remove any default margins */
 }
 
-.header-buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.header-buttons-container {
-    display: flex;
-    gap: 10px;
-}
-
-.header-buttons-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    margin-top: 10px;
+/* Remove margin-left to ensure centering on desktop */
+.header-title {
+    margin-left: 0; /* Override any left margin */
 }
 
 /* Responsive Mobile Styling */
