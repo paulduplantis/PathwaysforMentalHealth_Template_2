@@ -19,11 +19,11 @@ body {
 }
 
 .header-content {
+    position: relative; /* Necessary to position icons absolutely */
     display: flex;
-    justify-content: center; /* Center content horizontally */
+    justify-content: center; /* Keep the title centered */
     align-items: center;
     width: 100%;
-    position: relative;
 }
 
 .header-title {
@@ -34,10 +34,10 @@ body {
 }
 
 .header-icons {
+    position: absolute;
+    right: 150px; /* Position 150px from the right edge */
     display: flex;
     gap: 20px; /* Space between icons */
-    margin-left: auto; /* Push icons to the right */
-    margin-right: 150px; /* 150px from the right edge for desktop */
 }
 
 .header-icons i {
@@ -53,6 +53,7 @@ body {
     }
 
     .header-icons {
+        position: static; /* Reset positioning for mobile */
         justify-content: center; /* Center icons on mobile */
         margin: 10px 0 0 0; /* Remove margin-right for mobile */
     }
