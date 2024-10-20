@@ -11,7 +11,7 @@ body {
 
 /* General Header Styling */
 .header {
-    background-color: #4a3b8b;
+    background-color: #4a3b8b; /* Change the color back as needed */
     padding: 10px 0;
     width: 100%;
     text-align: center;
@@ -70,6 +70,19 @@ body {
     .header-icons i {
         font-size: 28px; /* Slightly larger icons for mobile */
     }
+
+    /* Adjust feed container for mobile */
+    .feed-container {
+        flex-direction: column; /* Stacks records one on top of the other */
+        width: 100%; /* Full width for mobile */
+        padding: 0 10px;
+    }
+
+    /* Make each card full width on mobile */
+    .profile-card, .provider-card, .product-card, .insight-card {
+        width: 100%; /* Full width for each card */
+        margin-bottom: 20px;
+    }
 }
 
 /* Feed Container Styling */
@@ -87,7 +100,7 @@ body {
     border-radius: 12px;
     background: linear-gradient(to bottom, #E0F7FA, #FFFFFF);
     padding: 20px;
-    width: 22%;
+    width: 22%; /* Desktop card width */
     box-sizing: border-box;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
