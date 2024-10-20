@@ -14,28 +14,27 @@ body {
     background-color: #4a3b8b;
     padding: 10px 0;
     width: 100%;
-    position: relative;
-    text-align: center; /* Center the title by default */
+    text-align: center;
 }
 
 .header-content {
-    position: relative; /* Necessary to position icons absolutely */
     display: flex;
-    justify-content: center; /* Keep the title centered */
+    justify-content: space-between; /* Space between title and icons */
     align-items: center;
     width: 100%;
+    padding: 0 150px; /* Padding on the sides */
 }
 
 .header-title {
     color: white;
     font-weight: 600;
     font-size: 1.5em;
-    margin: 0;
+    margin: 0 auto; /* Center the title */
+    flex-grow: 1; /* Ensure it takes up the available space */
+    text-align: center;
 }
 
 .header-icons {
-    position: absolute;
-    right: 150px; /* Position 150px from the right edge */
     display: flex;
     gap: 20px; /* Space between icons */
 }
@@ -49,13 +48,16 @@ body {
 /* Responsive Mobile Styling */
 @media (max-width: 767px) {
     .header-content {
-        flex-direction: column; /* Stack title and icons */
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .header-title {
+        margin-bottom: 10px;
     }
 
     .header-icons {
-        position: static; /* Reset positioning for mobile */
-        justify-content: center; /* Center icons on mobile */
-        margin: 10px 0 0 0; /* Remove margin-right for mobile */
+        justify-content: center;
     }
 
     .header-icons i {
@@ -131,10 +133,6 @@ body {
 
 /* Mobile Styling */
 @media (max-width: 767px) {
-    .header {
-        padding: 10px 10px;
-    }
-
     .header-content {
         flex-direction: column;
         align-items: center;
