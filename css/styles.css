@@ -12,16 +12,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .header-title {
     font-size: 1.5rem;
     font-weight: 600;
+    flex-grow: 1;
+    text-align: center;
 }
 
 .header-buttons {
     display: flex;
     gap: 15px;
+    margin-right: 150px;
 }
 
 .header-button {
@@ -31,12 +35,14 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 150px;
 }
 
 .feed-container {
     display: flex;
-    justify-content: space-around;
-    margin: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 150px;
 }
 
 .profile-card {
@@ -44,9 +50,16 @@ body {
     border-radius: 12px;
     background: linear-gradient(to bottom, #E0F7FA, #FFFFFF);
     padding: 20px;
-    width: 300px;
+    width: 22%;
+    box-sizing: border-box;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.profile-card:nth-child(4n) {
+    margin-right: 0;
 }
 
 .profile-tag {
@@ -64,7 +77,7 @@ body {
     font-size: 50px;
     color: #87CEFA;
     display: block;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .profile-title {
