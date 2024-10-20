@@ -54,7 +54,7 @@ body {
     box-sizing: border-box;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin-bottom: 3px;
     margin-right: 3px;
 }
 
@@ -90,4 +90,91 @@ p {
     margin: 0;
     font-size: 16px;
     color: #333;
+}
+
+/* Provider Card Styles */
+.provider-card {
+    border: 2px solid #FFD700;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #FFFACD, #FFFFFF);
+    padding: 20px;
+    width: 24%;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3px;
+    margin-right: 3px;
+}
+
+.provider-card:nth-child(4n) {
+    margin-right: 0;
+}
+
+.provider-tag {
+    background-color: #FFA500;
+    color: white;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Product Card Styles */
+.product-card {
+    border: 2px solid #32CD32;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #E0FFD8, #FFFFFF);
+    padding: 20px;
+    width: 24%;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3px;
+    margin-right: 3px;
+}
+
+.product-card:nth-child(4n) {
+    margin-right: 0;
+}
+
+.product-tag {
+    background-color: #228B22;
+    color: white;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Insight Card Styles */
+.insight-card {
+    border: 2px solid #8A2BE2;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #E6E6FA, #FFFFFF);
+    padding: 20px;
+    width: 24%;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3px;
+    margin-right: 3px;
+}
+
+.insight-card:nth-child(4n) {
+    margin-right: 0;
+}
+
+.insight-tag {
+    background-color: #6A5ACD;
+    color: white;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
