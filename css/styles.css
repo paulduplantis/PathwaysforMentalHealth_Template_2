@@ -22,7 +22,7 @@ body {
     justify-content: space-between; /* Space between title and icons */
     align-items: center;
     width: 100%;
-    padding: 0 150px; /* Padding on the sides */
+    padding: 0 20px; /* Remove large padding and add small default padding */
 }
 
 .header-title {
@@ -37,6 +37,7 @@ body {
 .header-icons {
     display: flex;
     gap: 20px; /* Space between icons */
+    margin-right: 20px; /* Slight margin to avoid being too close to the edge */
 }
 
 .header-icons i {
@@ -58,6 +59,7 @@ body {
 
     .header-icons {
         justify-content: center;
+        margin: 10px 0 0 0;
     }
 
     .header-icons i {
