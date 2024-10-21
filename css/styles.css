@@ -9,6 +9,7 @@ body {
     margin: 0;
 }
 
+
 /* General Header Styling */
 .header {
     background-color: #000000; /* Black header background */
@@ -28,9 +29,9 @@ body {
 /* Left section (title and menu) */
 .header-left {
     display: flex;
-    align-items: center; /* Align title and buttons horizontally */
+    align-items: center; /* Align items horizontally */
     gap: 20px; /* Gap between title and buttons */
-    flex-wrap: nowrap; /* Prevent wrapping of buttons to next line */
+    flex-wrap: nowrap; /* Ensure title and buttons are on the same row */
 }
 
 .header-title {
@@ -38,6 +39,7 @@ body {
     font-weight: 600;
     font-size: 1.5em;
     margin: 0;
+    white-space: nowrap; /* Prevent title from wrapping */
 }
 
 .header-menu {
