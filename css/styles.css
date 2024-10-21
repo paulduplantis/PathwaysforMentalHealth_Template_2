@@ -13,6 +13,7 @@ body {
 .help-line {
     text-align: center;
     font-size: 1.1em;
+    margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 600;
 }
