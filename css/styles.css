@@ -21,14 +21,27 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 150px; /* Add padding to control space on both sides */
+    padding: 0 150px; /* Add padding on both sides */
     box-sizing: border-box;
 }
 
-/* Header Menu (left) */
+/* Left section (title and menu) */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Gap between title and buttons */
+}
+
+.header-title {
+    color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin: 0;
+}
+
 .header-menu {
     display: flex;
-    gap: 10px;
+    gap: 10px; /* Space between buttons */
 }
 
 .header-button, .header-link {
@@ -45,14 +58,6 @@ body {
 
 .header-button:hover, .header-link:hover {
     background-color: #dddddd;
-}
-
-.header-title {
-    color: white;
-    font-weight: 600;
-    font-size: 1.5em;
-    text-align: center;
-    flex-grow: 1;
 }
 
 /* Icons section (right) */
@@ -75,6 +80,11 @@ body {
         align-items: center;
     }
 
+    .header-left {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .header-menu {
         justify-content: center;
         margin-bottom: 10px;
@@ -93,6 +103,7 @@ body {
         font-size: 28px;
     }
 }
+
 
 /* Feed Container Styling */
 .feed-container {
