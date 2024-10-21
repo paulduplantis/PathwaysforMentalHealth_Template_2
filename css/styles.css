@@ -9,6 +9,26 @@ body {
     margin: 0;
 }
 
+/* Centered Help Line */
+.help-line {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Filter Line Styling */
+.filter-line {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
 /* General Header Styling */
 .header {
     background-color: #000000; /* Black header background */
