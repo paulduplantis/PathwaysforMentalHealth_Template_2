@@ -1,4 +1,5 @@
-/* General Body Styling */
+/* styles.css */
+
 body {
     font-family: 'Quicksand', sans-serif;
     display: flex;
@@ -7,6 +8,7 @@ body {
     background-color: #f0f0f0;
     margin: 0;
 }
+
 
 /* General Header Styling */
 .header {
@@ -73,19 +75,112 @@ body {
     cursor: pointer;
 }
 
-/* Tablet and Desktop Styling */
-@media (min-width: 768px) {
+/* Mobile Styling */
+@media (max-width: 767px) {
     .header-content {
-        flex-direction: row; /* Ensure horizontal layout for desktop */
-        justify-content: space-between; /* Keep elements spaced */
-        padding: 0 150px; /* Restore padding on larger screens */
+        flex-direction: column;
+        padding: 10px; /* Adjust for mobile */
+        align-items: center;
     }
 
     .header-left {
-        flex-direction: row;
-        gap: 20px; /* Keep title and buttons in one row */
+        flex-direction: column;
+        gap: 10px;
     }
 
+    /* Ensure Share Icons come first on mobile */
+    .header-icons {
+        order: 1; /* Share icons first */
+        justify-content: center;
+        margin: 0;
+    }
+
+    /* Move Attractor, Ask GPT, About buttons below icons */
+    .header-menu {
+        order: 2; /* Buttons after icons */
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .header-title {
+        margin-bottom: 10px;
+        order: 0; /* Keep title at the top */
+    }
+
+    .header-icons i {
+        font-size: 28px;
+    }
+}
+
+
+/* Feed Container Styling */
+.feed-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 30px;
+}
+
+/* Card Styling */
+.profile-card, .provider-card, .product-card, .insight-card {
+    border: 2px solid #ADD8E6;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #E0F7FA, #FFFFFF);
+    padding: 20px;
+    width: 22%; /* Desktop card width */
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Tag Styling */
+.profile-card .profile-tag, .provider-card .provider-tag, .product-card .product-tag, .insight-card .insight-tag {
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.profile-card .profile-tag { background-color: #1E90FF; color: white; }
+.provider-card .provider-tag { background-color: #FFA500; color: white; }
+.product-card .product-tag { background-color: #32CD32; color: white; }
+.insight-card .insight-tag { background-color: #FFD700; color: white; }
+
+.profile-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.profile-card i, .provider-card i, .product-card i, .insight-card i {
+    font-size: 50px;
+    color: #87CEFA;
+    margin-bottom: 10px;
+}
+
+/* Buttons Styling */
+.header-button, .ask-chatgpt-button {
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.header-button, .ask-chatgpt-button {
+    background-color: #FFFFFF;
+}
+
+.header-button:hover, .ask-chatgpt-button:hover {
+    background-color: #DDDDDD;
+}
+
+/* Tablet and Desktop Styling */
+@media (min-width: 768px) {
     .feed-container {
         display: flex;
         flex-wrap: wrap;
@@ -106,44 +201,3 @@ body {
     }
 }
 
-/* Mobile Styling */
-@media (max-width: 767px) {
-    /* Stack header content vertically on mobile */
-    .header-content {
-        flex-direction: column;
-        padding: 10px;
-        align-items: center;
-    }
-
-    /* Ensure the share icons come first */
-    .header-icons {
-        order: 1; /* Share icons come first */
-        justify-content: center;
-    }
-
-    /* Move the Attractor, Ask GPT, About buttons below the icons */
-    .header-menu {
-        order: 2; /* Buttons after icons */
-        margin-top: 10px;
-        flex-direction: column; /* Stack buttons vertically on mobile */
-    }
-
-    .header-title {
-        order: 0; /* Keep the title at the top */
-        margin-bottom: 10px;
-    }
-
-    /* Feed container adjustments for mobile */
-    .feed-container {
-        display: flex;
-        flex-direction: column; /* Stack records vertically */
-        width: 100%; /* Full width for mobile */
-    }
-
-    /* Ensure each card takes full width on mobile */
-    .profile-card, .provider-card, .product-card, .insight-card {
-        width: 100%; /* Force each card to take full width */
-        margin-bottom: 20px; /* Maintain spacing between cards */
-        box-sizing: border-box; /* Ensure proper padding */
-    }
-}
