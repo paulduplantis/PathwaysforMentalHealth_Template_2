@@ -1,204 +1,164 @@
-/* styles.css */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathways for Mental Health</title>
 
-body {
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f0f0f0;
-    margin: 0;
-}
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 
-/* General Header Styling */
-.header {
-    background-color: #000000; /* Black header background */
-    padding: 10px 0;
-    width: 100%;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 150px; /* Add padding on both sides */
-    box-sizing: border-box;
-}
-
-/* Left section (title and menu) */
-.header-left {
-    display: flex;
-    align-items: center; /* Align items horizontally */
-    gap: 20px; /* Gap between title and buttons */
-    flex-wrap: nowrap; /* Ensure title and buttons are on the same row */
-}
-
-.header-title {
-    color: white;
-    font-weight: 600;
-    font-size: 1.5em;
-    margin: 0;
-    white-space: nowrap; /* Prevent title from wrapping */
-}
-
-.header-menu {
-    display: flex;
-    gap: 10px; /* Space between buttons */
-}
-
-.header-button, .header-link {
-    padding: 10px 20px;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.header-button:hover, .header-link:hover {
-    background-color: #dddddd;
-}
-
-/* Icons section (right) */
-.header-icons {
-    display: flex;
-    gap: 20px; /* Space between icons */
-}
-
-.header-icons i {
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-/* Mobile Styling */
-@media (max-width: 767px) {
-    .header-content {
-        flex-direction: column;
-        padding: 10px; /* Adjust for mobile */
-        align-items: center;
-    }
-
-    .header-left {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    /* Ensure Share Icons come first on mobile */
-    .header-icons {
-        order: 1; /* Share icons first */
-        justify-content: center;
-        margin: 0;
-    }
-
-    /* Move Attractor, Ask GPT, About buttons below icons */
-    .header-menu {
-        order: 2; /* Buttons after icons */
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    .header-title {
-        margin-bottom: 10px;
-        order: 0; /* Keep title at the top */
-    }
-
-    .header-icons i {
-        font-size: 28px;
-    }
-}
+    <!-- Link to Font Awesome (for Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- Header Section -->
+<div class="header">
+    <div class="header-content">
+        <!-- Site title and buttons section -->
+        <div class="header-left">
+            <div class="header-title">Pathways for Mental Health</div>
+            <div class="header-menu">
+                <button class="header-button">ATTRACTOR</button>
+                <button class="header-button">ASK Chat GPT</button>
+                <a href="#about" class="header-link">About</a>
+            </div>
+        </div>
+        <!-- Icons aligned to the right -->
+        <div class="header-icons">
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-share-alt"></i>
+            <i class="fas fa-rss"></i>
+        </div>
+    </div>
+</div>
 
 
-/* Feed Container Styling */
-.feed-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 90%;
-    margin-top: 30px;
-}
-
-/* Card Styling */
-.profile-card, .provider-card, .product-card, .insight-card {
-    border: 2px solid #ADD8E6;
-    border-radius: 12px;
-    background: linear-gradient(to bottom, #E0F7FA, #FFFFFF);
-    padding: 20px;
-    width: 22%; /* Desktop card width */
-    box-sizing: border-box;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-/* Tag Styling */
-.profile-card .profile-tag, .provider-card .provider-tag, .product-card .product-tag, .insight-card .insight-tag {
-    font-weight: bold;
-    padding: 2px 10px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-right: 5px;
-}
-
-.profile-card .profile-tag { background-color: #1E90FF; color: white; }
-.provider-card .provider-tag { background-color: #FFA500; color: white; }
-.product-card .product-tag { background-color: #32CD32; color: white; }
-.insight-card .insight-tag { background-color: #FFD700; color: white; }
-
-.profile-title {
-    font-size: 1.2em;
-    font-weight: 600;
-    margin: 10px 0;
-}
-
-.profile-card i, .provider-card i, .product-card i, .insight-card i {
-    font-size: 50px;
-    color: #87CEFA;
-    margin-bottom: 10px;
-}
-
-/* Buttons Styling */
-.header-button, .ask-chatgpt-button {
-    padding: 10px 20px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.header-button, .ask-chatgpt-button {
-    background-color: #FFFFFF;
-}
-
-.header-button:hover, .ask-chatgpt-button:hover {
-    background-color: #DDDDDD;
-}
-
-/* Tablet and Desktop Styling */
-@media (min-width: 768px) {
-    .feed-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 90%;
-        margin-top: 30px;
-    }
-
-    .profile-card, .provider-card, .product-card, .insight-card {
-        width: 45%; /* Two columns for tablets */
-        margin-bottom: 20px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .profile-card, .provider-card, .product-card, .insight-card {
-        width: 22%; /* Three to four columns for desktops */
-    }
-}
 
 
+    <!-- Paginated Feed Grid Section -->
+    <div class="feed-container">
+        <!-- Profile Records -->
+        <div class="profile-card">
+            <span class="profile-tag">Profile</span>
+            <i class="fas fa-user-circle"></i>
+            <div class="profile-title">John Doe I</div>
+            <p>Curator of content and community contributor.</p>
+        </div>
+
+        <div class="profile-card">
+            <span class="profile-tag">Profile</span>
+            <i class="fas fa-user-circle"></i>
+            <div class="profile-title">Jane Smith</div>
+            <p>Expert in mental health and community outreach.</p>
+        </div>
+
+        <div class="profile-card">
+            <span class="profile-tag">Profile</span>
+            <i class="fas fa-user-circle"></i>
+            <div class="profile-title">Alex Johnson</div>
+            <p>Volunteer coordinator and mental health advocate.</p>
+        </div>
+
+        <div class="profile-card">
+            <span class="profile-tag">Profile</span>
+            <i class="fas fa-user-circle"></i>
+            <div class="profile-title">Emily Davis</div>
+            <p>Licensed therapist and mental health advisor.</p>
+        </div>
+
+        <!-- Provider Records -->
+        <div class="provider-card">
+            <span class="provider-tag">Provider</span>
+            <i class="fas fa-hands-helping"></i>
+            <div class="profile-title">Community Help Center</div>
+            <p>Local community resource providing mental health support services.</p>
+        </div>
+
+        <div class="provider-card">
+            <span class="provider-tag">Provider</span>
+            <i class="fas fa-hands-helping"></i>
+            <div class="profile-title">Wellness Services</div>
+            <p>Provider of holistic wellness and mental health workshops.</p>
+        </div>
+
+        <div class="provider-card">
+            <span class="provider-tag">Provider</span>
+            <i class="fas fa-hands-helping"></i>
+            <div class="profile-title">Bright Future Clinic</div>
+            <p>Specialized clinic offering therapy for children and families.</p>
+        </div>
+
+        <div class="provider-card">
+            <span class="provider-tag">Provider</span>
+            <i class="fas fa-hands-helping"></i>
+            <div class="profile-title">Mindful Care Center</div>
+            <p>Focused on mental wellness and mindfulness-based therapies.</p>
+        </div>
+
+        <!-- Product Records -->
+        <div class="product-card">
+            <span class="product-tag">Product</span>
+            <i class="fas fa-box-open"></i>
+            <div class="profile-title">Mindful Journal</div>
+            <p>Journal designed to promote mental clarity and mindfulness practice.</p>
+        </div>
+
+        <div class="product-card">
+            <span class="product-tag">Product</span>
+            <i class="fas fa-box-open"></i>
+            <div class="profile-title">Stress Relief Kit</div>
+            <p>Includes tools and guides to help manage stress effectively.</p>
+        </div>
+
+        <div class="product-card">
+            <span class="product-tag">Product</span>
+            <i class="fas fa-box-open"></i>
+            <div class="profile-title">Therapy Lamp</div>
+            <p>Light therapy lamp to combat seasonal affective disorder.</p>
+        </div>
+
+        <div class="product-card">
+            <span class="product-tag">Product</span>
+            <i class="fas fa-box-open"></i>
+            <div class="profile-title">Relaxation App Subscription</div>
+            <p>Access to guided relaxation and meditation exercises.</p>
+        </div>
+
+        <!-- Insight Records -->
+        <div class="insight-card">
+            <span class="insight-tag">Insight</span>
+            <i class="fas fa-lightbulb"></i>
+            <div class="profile-title">Article: Benefits of Mindfulness</div>
+            <p>An exploration of how mindfulness practices improve mental health.</p>
+        </div>
+
+        <div class="insight-card">
+            <span class="insight-tag">Insight</span>
+            <i class="fas fa-lightbulb"></i>
+            <div class="profile-title">Video: Coping with Anxiety</div>
+            <p>Expert advice on practical techniques for managing anxiety.</p>
+        </div>
+
+        <div class="insight-card">
+            <span class="insight-tag">Insight</span>
+            <i class="fas fa-lightbulb"></i>
+            <div class="profile-title">Book: The Power of Now</div>
+            <p>A book review on how living in the present can enhance mental health.</p>
+        </div>
+
+        <div class="insight-card">
+            <span class="insight-tag">Insight</span>
+            <i class="fas fa-lightbulb"></i>
+            <div class="profile-title">Podcast: Breaking the Stigma</div>
+            <p>Discussion on overcoming mental health stigma in communities.</p>
+        </div>
+    </div>
+
+    <!-- Link to External JavaScript -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
