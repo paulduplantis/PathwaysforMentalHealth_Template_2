@@ -75,13 +75,19 @@ body {
     cursor: pointer;
 }
 
+
 /* Mobile Styling */
 @media (max-width: 767px) {
+    body {
+        background-color: red; /* Test to see if mobile styles are being applied */
+    }
+
     .header-content {
         flex-direction: column;
         padding: 10px; /* Adjust for mobile */
         align-items: center;
     }
+}
 
     .header-left {
         flex-direction: column;
