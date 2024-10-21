@@ -73,46 +73,6 @@ body {
     cursor: pointer;
 }
 
-/* Mobile Styling */
-@media (max-width: 767px) {
-    /* Stack header content vertically on mobile */
-    .header-content {
-        flex-direction: column;
-        padding: 10px;
-        align-items: center;
-    }
-
-    /* Ensure the share icons come first */
-    .header-icons {
-        order: 1; /* Share icons come first */
-        justify-content: center;
-    }
-
-    /* Move the Attractor, Ask GPT, About buttons below the icons */
-    .header-menu {
-        order: 2; /* Buttons after icons */
-        margin-top: 10px;
-    }
-
-    .header-title {
-        order: 0; /* Keep the title at the top */
-        margin-bottom: 10px;
-    }
-
-    /* Make the feed-container stack vertically */
-    .feed-container {
-        display: flex;
-        flex-direction: column; /* Stack records vertically */
-        width: 100%; /* Full width for mobile */
-    }
-
-    /* Make each card take full width on mobile */
-    .profile-card, .provider-card, .product-card, .insight-card {
-        width: 100%; /* Force each card to take full width */
-        margin-bottom: 20px;
-    }
-}
-
 /* Tablet and Desktop Styling */
 @media (min-width: 768px) {
     .header-content {
@@ -143,5 +103,47 @@ body {
 @media (min-width: 1024px) {
     .profile-card, .provider-card, .product-card, .insight-card {
         width: 22%; /* Three to four columns for desktops */
+    }
+}
+
+/* Mobile Styling */
+@media (max-width: 767px) {
+    /* Stack header content vertically on mobile */
+    .header-content {
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+    /* Ensure the share icons come first */
+    .header-icons {
+        order: 1; /* Share icons come first */
+        justify-content: center;
+    }
+
+    /* Move the Attractor, Ask GPT, About buttons below the icons */
+    .header-menu {
+        order: 2; /* Buttons after icons */
+        margin-top: 10px;
+        flex-direction: column; /* Stack buttons vertically on mobile */
+    }
+
+    .header-title {
+        order: 0; /* Keep the title at the top */
+        margin-bottom: 10px;
+    }
+
+    /* Feed container adjustments for mobile */
+    .feed-container {
+        display: flex;
+        flex-direction: column; /* Stack records vertically */
+        width: 100%; /* Full width for mobile */
+    }
+
+    /* Ensure each card takes full width on mobile */
+    .profile-card, .provider-card, .product-card, .insight-card {
+        width: 100%; /* Force each card to take full width */
+        margin-bottom: 20px; /* Maintain spacing between cards */
+        box-sizing: border-box; /* Ensure proper padding */
     }
 }
