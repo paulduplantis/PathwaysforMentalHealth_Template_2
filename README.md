@@ -31,5 +31,6 @@ What is the benefit of carrying a DIF link on a site? Not much other than a decl
 
 I am not a Code and using ChatGPT and Claude 3 to help be build the framework so I would appreciate any feedback on the code. I would love this to turn into a collaborative project where the code collectively built here spurs new development to follow the principles outlined above. 
 
-Thank you ~~ J. Paul Duplantis
+~~ J. Paul Duplantis
+The Emergence
 paulduplantis@gmail.com
