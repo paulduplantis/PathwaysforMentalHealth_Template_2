@@ -11,7 +11,7 @@ body {
 
 /* General Header Styling */
 .header {
-    background-color: #000000; /* Change the color back as needed */
+    background-color: #000000; /* Black header background */
     padding: 10px 0;
     width: 100%;
     text-align: center;
@@ -20,29 +20,52 @@ body {
 .header-content {
     display: flex;
     align-items: center; /* Vertically center the title and icons */
-    justify-content: center; /* Ensure the title stays centered */
+    justify-content: space-between; /* Space between menu and title/icons */
     width: 100%;
     position: relative;
+}
+
+/* Header Menu (left) */
+.header-menu {
+    display: flex;
+    gap: 10px;
+    margin-left: 150px; /* Offset from the left */
+}
+
+.header-button, .header-link {
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.header-button:hover, .header-link:hover {
+    background-color: #dddddd;
 }
 
 .header-title {
     color: white;
     font-weight: 600;
     font-size: 1.5em;
-    margin: 0 auto; /* Center title by auto margins */
     text-align: center;
     flex-grow: 1; /* Ensure title stays centered */
+    margin: 0 auto;
 }
 
+/* Icons section (right) */
 .header-icons {
     display: flex;
     gap: 20px; /* Space between icons */
-    margin-left: auto; /* Push icons to the right */
-    padding-right: 150px; /* Ensure icons are 150px from the right edge */
+    margin-right: 150px; /* Push icons 150px from the right */
 }
 
 .header-icons i {
-    color: white; /* Ensure icons are white */
+    color: white; /* White icons */
     font-size: 30px; /* Larger icons for desktop */
     cursor: pointer;
 }
@@ -55,33 +78,24 @@ body {
         justify-content: center;
     }
 
+    .header-menu {
+        justify-content: center;
+        margin-left: 0; /* Remove left margin for mobile */
+        margin-bottom: 10px;
+    }
+
     .header-title {
         text-align: center;
-        margin: 0;
+        margin-bottom: 10px;
     }
 
     .header-icons {
         justify-content: center;
-        margin-top: 10px;
-        padding-right: 0; /* Remove right padding for mobile */
-        margin-left: 0; /* No margin-left for mobile */
+        margin: 0; /* Reset margins for mobile */
     }
 
     .header-icons i {
-        font-size: 28px; /* Slightly larger icons for mobile */
-    }
-
-    /* Adjust feed container for mobile */
-    .feed-container {
-        flex-direction: column; /* Stacks records one on top of the other */
-        width: 100%; /* Full width for mobile */
-        padding: 0 10px;
-    }
-
-    /* Make each card full width on mobile */
-    .profile-card, .provider-card, .product-card, .insight-card {
-        width: 100%; /* Full width for each card */
-        margin-bottom: 20px;
+        font-size: 28px; /* Slightly smaller icons for mobile */
     }
 }
 
@@ -172,4 +186,3 @@ body {
         width: 22%; /* Three to four columns for desktops */
     }
 }
-
