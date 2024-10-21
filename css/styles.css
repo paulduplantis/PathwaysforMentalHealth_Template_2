@@ -28,8 +28,9 @@ body {
 /* Left section (title and menu) */
 .header-left {
     display: flex;
-    align-items: center;
+    align-items: center; /* Align title and buttons horizontally */
     gap: 20px; /* Gap between title and buttons */
+    flex-wrap: nowrap; /* Prevent wrapping of buttons to next line */
 }
 
 .header-title {
