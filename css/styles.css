@@ -88,18 +88,23 @@ body {
         gap: 10px;
     }
 
+    /* Ensure Share Icons come first on mobile */
+    .header-icons {
+        order: 1; /* Share icons first */
+        justify-content: center;
+        margin: 0;
+    }
+
+    /* Move Attractor, Ask GPT, About buttons below icons */
     .header-menu {
+        order: 2; /* Buttons after icons */
         justify-content: center;
         margin-bottom: 10px;
     }
 
     .header-title {
         margin-bottom: 10px;
-    }
-
-    .header-icons {
-        justify-content: center;
-        margin: 0;
+        order: 0; /* Keep title at the top */
     }
 
     .header-icons i {
