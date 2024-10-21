@@ -1,5 +1,4 @@
-/* styles.css */
-
+/* General Body Styling */
 body {
     font-family: 'Quicksand', sans-serif;
     display: flex;
@@ -8,7 +7,6 @@ body {
     background-color: #f0f0f0;
     margin: 0;
 }
-
 
 /* General Header Styling */
 .header {
@@ -75,50 +73,6 @@ body {
     cursor: pointer;
 }
 
-
-/* Mobile Styling */
-@media (max-width: 767px) {
-    body {
-        background-color: red; /* Test to see if mobile styles are being applied */
-    }
-
-    .header-content {
-        flex-direction: column;
-        padding: 10px; /* Adjust for mobile */
-        align-items: center;
-    }
-}
-
-    .header-left {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    /* Ensure Share Icons come first on mobile */
-    .header-icons {
-        order: 1; /* Share icons first */
-        justify-content: center;
-        margin: 0;
-    }
-
-    /* Move Attractor, Ask GPT, About buttons below icons */
-    .header-menu {
-        order: 2; /* Buttons after icons */
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    .header-title {
-        margin-bottom: 10px;
-        order: 0; /* Keep title at the top */
-    }
-
-    .header-icons i {
-        font-size: 28px;
-    }
-}
-
-
 /* Feed Container Styling */
 .feed-container {
     display: flex;
@@ -183,6 +137,46 @@ body {
 
 .header-button:hover, .ask-chatgpt-button:hover {
     background-color: #DDDDDD;
+}
+
+/* Mobile Styling */
+@media (max-width: 767px) {
+    /* Stack header content vertically on mobile */
+    .header-content {
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+    /* Ensure the share icons come first */
+    .header-icons {
+        order: 1; /* Share icons come first */
+        justify-content: center;
+    }
+
+    /* Move the Attractor, Ask GPT, About buttons below the icons */
+    .header-menu {
+        order: 2; /* Buttons after icons */
+        margin-top: 10px;
+    }
+
+    .header-title {
+        order: 0; /* Keep the title at the top */
+        margin-bottom: 10px;
+    }
+
+    /* Make the feed-container stack vertically */
+    .feed-container {
+        display: flex;
+        flex-direction: column; /* Stack records vertically */
+        width: 100%; /* Full width for mobile */
+    }
+
+    /* Make each card take full width on mobile */
+    .profile-card, .provider-card, .product-card, .insight-card {
+        width: 100%; /* Force each card to take full width */
+        margin-bottom: 20px;
+    }
 }
 
 /* Tablet and Desktop Styling */
