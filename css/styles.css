@@ -154,14 +154,14 @@ body {
     margin-bottom: 20px;
 }
 /* Flex Layout for Provider and Insight Content */
-.provider-content, .insight-content {
+.provider-content, product-content, .insight-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 /* Provider and Insight Details */
-.provider-details, .insight-details {
+.provider-details, product-content, .insight-details {
     flex-grow: 1;
     padding-right: 15px;
 }
@@ -186,7 +186,7 @@ body {
 }
 
 /* Profile, Provider, Insight, Product Image Styling */
-.profile-image,.provider-image, .product-image, .insight-image {
+.profile-image, .provider-image, .product-image, .insight-image {
     width: 80px;
     height: 80px;
     flex-shrink: 0;
