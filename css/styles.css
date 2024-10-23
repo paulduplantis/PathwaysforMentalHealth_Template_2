@@ -185,14 +185,14 @@ body {
     margin: 10px 0;
 }
 
-/* Profile, Provider, Insight Image Styling */
-.profile-image,.provider-image, .insight-image {
+/* Profile, Provider, Insight, Product Image Styling */
+.profile-image,.provider-image, .product-image, .insight-image {
     width: 80px;
     height: 80px;
     flex-shrink: 0;
 }
 
-.profile-image img, .provider-image img, .insight-image img {
+.profile-image img, .provider-image img, product-image img, .insight-image img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
