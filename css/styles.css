@@ -153,6 +153,18 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
+/* Flex Layout for Provider and Insight Content */
+.provider-content, .insight-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Provider and Insight Details */
+.provider-details, .insight-details {
+    flex-grow: 1;
+    padding-right: 15px;
+}
 
 /* Profile Content Flex Layout */
 .profile-content {
@@ -173,14 +185,14 @@ body {
     margin: 10px 0;
 }
 
-/* Profile Image Styling */
-.profile-image {
+/* Profile, Provider, Insight Image Styling */
+.profile-image,.provider-image, .insight-image {
     width: 80px;
     height: 80px;
     flex-shrink: 0;
 }
 
-.profile-image img {
+.profile-image img, .provider-image img, .insight-image img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
