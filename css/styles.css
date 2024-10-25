@@ -265,18 +265,12 @@ body {
 .footer {
     background-color: #000000; /* Match header background */
     padding: 10px 0;
-    width: 100%; /* Ensure footer spans full width */
-    position: relative;
-    left: 0;
-    bottom: 0;
-    margin-top: 20px;
-}
-
-.footer-content {
-    width: 100%; /* Full width of container */
-    max-width: 1200px; /* Optional: Align with main content width */
-    margin: 0 auto; /* Center align the content */
     text-align: center;
+    width: 100vw; /* Full viewport width */
+    position: relative; /* Ensures it spans across the screen */
+    left: 0; /* Aligns with left edge */
+    bottom: 0; /* Stays at the bottom of the viewport */
+    margin-top: 20px;
 }
 
 .footer p {
