@@ -165,7 +165,7 @@ body {
 }
 
 /* Profile, Provider, Product, Insight Title */
-.profile-title {
+.profile-title, provider-title, .product-title, .insight-title {
     font-size: 1.2em;
     font-weight: 600;
     margin: 10px 0;
