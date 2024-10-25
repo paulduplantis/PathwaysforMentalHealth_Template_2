@@ -273,11 +273,10 @@ body {
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
+    width: 100%; /* Full width of container */
+    max-width: 1200px; /* Optional: Align with main content width */
+    margin: 0 auto; /* Center align the content */
+    text-align: center;
 }
 
 .footer p {
@@ -296,4 +295,3 @@ body {
     color: #dddddd;
     text-decoration: underline;
 }
-
