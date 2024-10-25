@@ -267,10 +267,17 @@ body {
     padding: 10px 0;
     text-align: center;
     width: 100vw; /* Full viewport width */
-    position: relative; /* Ensures it spans across the screen */
-    left: 0; /* Aligns with left edge */
-    bottom: 0; /* Stays at the bottom of the viewport */
+    position: relative;
+    left: 0;
+    bottom: 0;
     margin-top: 20px;
+    z-index: 1; /* Ensure it overlays if needed */
+}
+
+.footer-content {
+    max-width: 1200px; /* Aligns with main content width */
+    margin: 0 auto; /* Centers the content */
+    text-align: center;
 }
 
 .footer p {
