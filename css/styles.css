@@ -263,9 +263,14 @@ body {
 
 /* Footer Styling */
 .footer {
-    background-color: #000000; /* Black header background */
+    background-color: #000000; /* Match header background */
     padding: 10px 0;
-    width: 100%;
+    text-align: center;
+    width: 100vw; /* Full viewport width */
+    position: relative; /* Ensures it spans across the screen */
+    left: 0; /* Aligns with left edge */
+    bottom: 0; /* Stays at the bottom of the viewport */
+    margin-top: 20px;
 }
 
 .footer p {
