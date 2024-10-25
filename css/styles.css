@@ -28,7 +28,7 @@ body {
 }
 
 /* General Header Styling */
-.header {
+.header, .footer {
     background-color: #000000; /* Black header background */
     padding: 10px 0;
     width: 100%;
@@ -262,17 +262,6 @@ body {
 }
 
 /* Footer Styling */
-.footer {
-    background-color: #000000; /* Match header background */
-    padding: 10px 0;
-    text-align: center;
-    width: 100vw; /* Full viewport width */
-    position: relative;
-    left: 0;
-    bottom: 0;
-    margin-top: 20px;
-    z-index: 1; /* Ensure it overlays if needed */
-}
 
 .footer-content {
     max-width: 1200px; /* Aligns with main content width */
