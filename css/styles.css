@@ -266,7 +266,10 @@ body {
     background-color: #000000; /* Match header background */
     padding: 10px 0;
     text-align: center;
-    width: 100%;
+    width: 100vw; /* Full viewport width */
+    position: relative; /* Ensures it spans across the screen */
+    left: 0; /* Aligns with left edge */
+    bottom: 0; /* Stays at the bottom of the viewport */
     margin-top: 20px;
 }
 
@@ -286,3 +289,4 @@ body {
     color: #dddddd;
     text-decoration: underline;
 }
+
