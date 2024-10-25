@@ -261,31 +261,55 @@ body {
     }
 }
 
-/* Footer Styling */
-.footer {
-    background-color: #000000; /* Match header background */
+
+/* Footer Container Styling */
+.footer-content {
+    width: 100%;
+    background-color: #000000;
+    color: white;
     padding: 10px 0;
     text-align: center;
-    width: 100vw; /* Full viewport width */
-    position: relative; /* Ensures it spans across the screen */
-    left: 0; /* Aligns with left edge */
-    bottom: 0; /* Stays at the bottom of the viewport */
     margin-top: 20px;
+    
+    /* Ensure footer spans full width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
 }
 
-.footer p {
-    color: white;
-    margin: 0;
-    font-weight: 600;
-}
-
-.footer a {
+/* Footer Link Styling */
+.footer-content a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-.footer a:hover {
+.footer-content a:hover {
     color: #dddddd;
     text-decoration: underline;
 }
+
+/* Additional fixes for container layout */
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.feed-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 30px;
+    flex: 1; /* Allow feed container to grow */
+}
+
