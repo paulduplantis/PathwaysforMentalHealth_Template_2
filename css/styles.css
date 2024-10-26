@@ -239,9 +239,9 @@ body {
     background-color: #DDDDDD;
 }
 
-/* Expand-Page Styling */
+/* Expand-Page Styling with Specificity */
 .expand-page {
-    background: linear-gradient(to bottom, #E0F7FA, #FFFFFF); /* Same background as records */
+    background: linear-gradient(to bottom, #E0F7FA, #FFFFFF) !important; /* Same background as records */
     border: 2px solid #ADD8E6;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -255,7 +255,7 @@ body {
 .expand-page h1 {
     font-size: 1.8em;
     font-weight: 600;
-    color: #1E90FF; /* Same color as profile tag */
+    color: #1E90FF !important; /* Matches the profile tag color */
     margin-bottom: 15px;
     text-align: center;
 }
@@ -264,7 +264,7 @@ body {
 .expand-page p {
     font-size: 1em;
     line-height: 1.6;
-    color: #333;
+    color: #333 !important;
     text-align: justify;
     margin-top: 0;
 }
