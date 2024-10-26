@@ -1,0 +1,75 @@
+ <!-- Product Records -->
+    <div class="product-card">
+          <div class="product-content">
+        <span class="product-tag">Product</span>
+        <div class="product-image">
+            <img src="assets/images/product2.png" alt="Product Image">
+            </div>
+          </div>
+            <div class="product-details">
+                 <div class="product-title">Product<br>On Framework</div>
+                <p>This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.<br><br>Focus: Product<br> </p>Words <a href="#" class="words">Product</a>, <a href="#" class="words">Product</a>
+                <div class="product-links">
+                    <a href="#" class="ask-help">Ask for Help</a>
+                    <a href="#" class="share-others">Share with Others</a>
+                </div>
+            </div>
+         
+        </div>
+
+    <!-- Product Records -->
+    <div class="product-card">
+          <div class="product-content">
+        <span class="product-tag">Product</span>
+        <div class="product-image">
+            <img src="assets/images/product2.png" alt="Product Image">
+            </div>
+          </div>
+            <div class="product-details">
+                 <div class="product-title">Product<br>On Framework</div>
+                <p>This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.<br><br>Focus: Product<br> </p>Words <a href="#" class="words">Product</a>, <a href="#" class="words">Product</a>
+                <div class="product-links">
+                    <a href="#" class="ask-help">Ask for Help</a> |
+                    <a href="#" class="share-others">Share with Others</a><br>
+                     <a href="#" class="expand-record">Expand Record</a>
+                </div>
+            </div>
+         
+        </div>
+
+   <!-- Product Records -->
+    <div class="product-card">
+          <div class="product-content">
+        <span class="product-tag">Product</span>
+        <div class="product-image">
+            <img src="assets/images/product2.png" alt="Product Image">
+            </div>
+          </div>
+            <div class="product-details">
+                 <div class="product-title">Product<br>On Framework</div>
+                <p>This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.<br><br>Focus: Product<br> </p>Words <a href="#" class="words">Product</a>, <a href="#" class="words">Product</a>
+                <div class="product-links">
+                    <a href="#" class="ask-help">Ask for Help</a>
+                    <a href="#" class="share-others">Share with Others</a>
+                </div>
+            </div>
+         
+        </div>
+   <!-- Product Records -->
+    <div class="product-card">
+          <div class="product-content">
+        <span class="product-tag">Product</span>
+        <div class="product-image">
+            <img src="assets/images/product2.png" alt="Product Image">
+            </div>
+          </div>
+            <div class="product-details">
+                 <div class="product-title">Product<br>On Framework</div>
+                <p>This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.This is a product record.<br><br>Focus: Product<br> </p>Words <a href="#" class="words">Product</a>, <a href="#" class="words">Product</a>
+                <div class="product-links">
+                    <a href="#" class="ask-help">Ask for Help</a>
+                    <a href="#" class="share-others">Share with Others</a>
+                </div>
+            </div>
+         
+        </div>
