@@ -215,6 +215,7 @@ body {
 .insight-card .insight-tag { background-color: #FFD700; color: white; }
 
 /* Expandable Content - initially hidden and positioned absolutely */
+/* Expandable Content - initially hidden and positioned absolutely */
 .expandable-content {
     display: none;
     position: absolute;
@@ -229,9 +230,11 @@ body {
     z-index: 10; /* Ensures it overlays other cards */
 }
 
+/* Show the expandable content when the card is expanded */
 .expanded .expandable-content {
-    display: block; /* Show when the card is expanded */
+    display: block;
 }
+
 
 /* Specific Adjustments for Different Card Types (if needed) */
 .profile-card.expanded .expandable-content { /* Profile-specific adjustments, if any */ }
