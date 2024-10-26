@@ -267,17 +267,15 @@ body {
 }
 
 .footer-content {
-    max-width: none; /* Remove the max-width constraint */
-    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding: 10px 150px;
+    box-sizing: border-box;
+    color: white;
 }
 
-.footer-left, .footer-right {
-    display: flex;
-    align-items: center;
-}
 
 .footer p {
     color: white;
