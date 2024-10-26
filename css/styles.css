@@ -214,33 +214,6 @@ body {
 .product-card .product-tag { background-color: #32CD32; color: white; }
 .insight-card .insight-tag { background-color: #FFD700; color: white; }
 
-/* Expandable Content - initially hidden and positioned absolutely */
-.expandable-content {
-    display: none; /* Hide by default */
-    position: absolute;
-    left: 50%; /* Center on the page */
-    top: 10px;
-    transform: translateX(-50%);
-    width: 500px;
-    max-width: 90vw;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-}
-
-:target.expandable-content {
-    display: block; /* Show when the target is matched */
-}
-
-/* Specific Adjustments for Different Card Types (if needed) */
-.profile-card.expanded .expandable-content { /* Profile-specific adjustments, if any */ }
-.provider-card.expanded .expandable-content { /* Provider-specific adjustments, if any */ }
-.product-card.expanded .expandable-content { /* Product-specific adjustments, if any */ }
-.insight-card.expanded .expandable-content { /* Insight-specific adjustments, if any */ }
-
 /* Icons in Cards */
 .profile-card i, .provider-card i, .product-card i, .insight-card i {
     font-size: 50px;
