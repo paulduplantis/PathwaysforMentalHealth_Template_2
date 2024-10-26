@@ -216,23 +216,25 @@ body {
 
 /* Expandable Content - initially hidden and positioned absolutely */
 .expandable-content {
-    display: none;
+    display: none; /* Hidden by default */
     position: absolute;
-    left: 100%; /* Position it outside the card to the right */
-    top: 10px; /* Align it vertically with some spacing */
-    width: 500px; /* Width of the expandable window */
+    left: 50%; /* Center horizontally */
+    top: 10px; /* Position near the top of the card */
+    transform: translateX(-50%); /* Center the element horizontally */
+    width: 500px;
+    max-width: 90vw; /* Ensure it fits within the viewport */
     padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 10; /* Ensures it overlays other cards */
+    z-index: 10;
 }
 
-/* Show the expandable content when the card is expanded */
 .expanded .expandable-content {
-    display: block;
+    display: block; /* Show content when expanded class is active */
 }
+
 
 
 /* Specific Adjustments for Different Card Types (if needed) */
