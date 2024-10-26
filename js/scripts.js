@@ -1,9 +1,7 @@
-function toggleExpand(link) {
-    const expandableContent = link.closest('.profile-card').nextElementSibling;
-    if (expandableContent) {
-        expandableContent.style.width = '600px'; // Adjust the width here if needed
-        expandableContent.style.display = expandableContent.style.display === 'block' ? 'none' : 'block';
-    } else {
-        console.error("No expandable content found for this record.");
-    }
+// scripts.js
+
+// Function to toggle expanded content visibility
+function toggleExpand(element) {
+    const card = element.closest('.profile-card, .provider-card, .product-card, .insight-card');
+    card.classList.toggle('expanded'); // Adds or removes the 'expanded' class
 }
