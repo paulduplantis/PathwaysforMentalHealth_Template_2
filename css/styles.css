@@ -228,11 +228,8 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.header-button, .ask-chatgpt-button {
     background-color: #FFFFFF;
+    transition: background-color 0.3s ease;
 }
 
 .header-button:hover, .ask-chatgpt-button:hover {
