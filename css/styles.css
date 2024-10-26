@@ -260,10 +260,23 @@ body {
 
 /* Footer Styling */
 
+.footer {
+    background-color: #000000;
+    padding: 10px 0;
+    width: 100%;
+}
+
 .footer-content {
-    max-width: 1200px; /* Aligns with main content width */
-    margin: 0 auto; /* Centers the content */
-    text-align: center;
+    max-width: none; /* Remove the max-width constraint */
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    align-items: center;
 }
 
 .footer p {
