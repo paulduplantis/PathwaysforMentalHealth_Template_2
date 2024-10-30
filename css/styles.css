@@ -231,10 +231,6 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.header-button, .ask-chatgpt-button {
-    background-color: #FFFFFF;
-}
-
 .header-button:hover, .ask-chatgpt-button:hover {
     background-color: #DDDDDD;
 }
